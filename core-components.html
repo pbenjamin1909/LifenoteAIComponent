@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LifeNote Core Components</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <!-- Page Header -->
+      <header class="page-header">
+        <h1>LifeNote Core Components</h1>
+        <p>
+          Built from the LifeNote design foundations: color, type, spacing, and
+          reusable interaction patterns.
+        </p>
+      </header>
+
+      <!-- Foundations Section -->
+      <section class="component-section">
+        <div class="two-column-layout">
+          <div>
+            <h2>Foundations Used</h2>
+
+            <div class="foundation-grid">
+              <div class="swatch-item">
+                <div class="swatch swatch--primary"></div>
+                <span>Primary</span>
+              </div>
+
+              <div class="swatch-item">
+                <div class="swatch swatch--primary-hover"></div>
+                <span>Primary Hover</span>
+              </div>
+
+              <div class="swatch-item">
+                <div class="swatch swatch--secondary"></div>
+                <span>Accent</span>
+              </div>
+
+              <div class="swatch-item">
+                <div class="swatch swatch--background"></div>
+                <span>Background</span>
+              </div>
+
+              <div class="swatch-item">
+                <div class="swatch swatch--surface"></div>
+                <span>Surface</span>
+              </div>
+
+              <div class="swatch-item">
+                <div class="swatch swatch--text-primary"></div>
+                <span>Text Primary</span>
+              </div>
+
+              <div class="swatch-item">
+                <div class="swatch swatch--text-secondary"></div>
+                <span>Text Secondary</span>
+              </div>
+
+              <div class="swatch-item">
+                <div class="swatch swatch--border"></div>
+                <span>Border</span>
+              </div>
+            </div>
+
+            <div class="type-notes">
+              <h2>Typography</h2>
+              <p class="type-example-heading">
+                <strong>Poppins SemiBold</strong><br />
+                Used for headings and component titles
+              </p>
+              <p class="type-example-body">
+                <strong>Inter Regular</strong><br />
+                Used for body copy, labels, and descriptions
+              </p>
+            </div>
+          </div>
+
+          <!-- Buttons Section -->
+          <div>
+            <h2>1. Buttons</h2>
+            <p class="section-intro">
+              This button system includes multiple styles and interaction states
+              to support consistent user actions across the LifeNote interface.
+            </p>
+
+            <!-- Primary Buttons -->
+            <div class="demo-box">
+              <div class="button-row">
+                <button class="btn btn--primary">
+                  <span class="btn__icon">✎</span>
+                  <span>New Entry</span>
+                </button>
+
+                <button class="btn btn--primary is-hover">
+                  <span class="btn__icon">✎</span>
+                  <span>New Entry</span>
+                </button>
+
+                <button class="btn btn--primary is-pressed">
+                  <span class="btn__icon">✎</span>
+                  <span>New Entry</span>
+                </button>
+
+                <button class="btn btn--primary" disabled>
+                  <span class="btn__icon">✎</span>
+                  <span>New Entry</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Secondary Buttons -->
+            <div class="demo-box">
+              <div class="button-row">
+                <button class="btn btn--secondary">
+                  <span class="btn__icon">✎</span>
+                  <span>New Entry</span>
+                </button>
+
+                <button class="btn btn--secondary is-hover">
+                  <span class="btn__icon">✎</span>
+                  <span>New Entry</span>
+                </button>
+
+                <button class="btn btn--secondary is-pressed">
+                  <span class="btn__icon">✎</span>
+                  <span>New Entry</span>
+                </button>
+
+                <button class="btn btn--secondary" disabled>
+                  <span class="btn__icon">✎</span>
+                  <span>New Entry</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Accent Buttons -->
+            <div class="demo-box">
+              <div class="button-row">
+                <button class="btn btn--accent">
+                  <span class="btn__icon">✎</span>
+                  <span>New Entry</span>
+                </button>
+
+                <button class="btn btn--accent is-hover">
+                  <span class="btn__icon">✎</span>
+                  <span>New Entry</span>
+                </button>
+
+                <button class="btn btn--accent is-pressed">
+                  <span class="btn__icon">✎</span>
+                  <span>New Entry</span>
+                </button>
+
+                <button class="btn btn--accent" disabled>
+                  <span class="btn__icon">✎</span>
+                  <span>New Entry</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="purpose-text">
+              <p>
+                <strong>Purpose:</strong> Buttons support major user actions
+                across the app.
+              </p>
+              <p>
+                <strong>System role:</strong> These styles create consistency
+                for actions like navigation, journal creation, and feature
+                access.
+              </p>
+              <p>
+                <strong>States included:</strong> Default, hover, pressed, and
+                disabled.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card Section -->
+      <section class="component-section">
+        <div class="card-layout">
+          <div class="card-copy">
+            <p>
+              <strong>Purpose:</strong> Cards group related content such as
+              journal entries and AI-generated insights.
+            </p>
+            <p>
+              <strong>System role:</strong> This component helps create clear
+              hierarchy and reusable content modules.
+            </p>
+          </div>
+
+          <div class="card-demo-wrap">
+            <h2>2. Card</h2>
+            <p class="section-intro">
+              Cards organize journal entries, AI insights, and other grouped
+              content into clean, reusable content blocks.
+            </p>
+
+            <article class="card">
+              <h3 class="card__title">Today’s Reflection</h3>
+              <p class="card__text">
+                Capture your thought and let AI help uncover emotional patterns
+                over time.
+              </p>
+              <a href="#" class="card__action">Continue ➜</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Navigation Section -->
+      <section class="component-section">
+        <h2>3. Navigation Bar</h2>
+        <p class="section-intro nav-intro">
+          The navigation bar provides access to key sections of LifeNote while
+          maintaining a simple, consistent layout.
+        </p>
+
+        <nav class="navbar">
+          <div class="navbar__brand">LifeNote</div>
+
+          <ul class="navbar__links">
+            <li><a href="#">Journal</a></li>
+            <li><a href="#">Insights</a></li>
+            <li><a href="#">History</a></li>
+          </ul>
+
+          <button class="btn btn--primary">
+            <span class="btn__icon">✎</span>
+            <span>New Entry</span>
+          </button>
+        </nav>
+
+        <div class="purpose-text nav-purpose">
+          <p>
+            <strong>Purpose:</strong> The navigation bar gives users access to
+            the main sections of the platform.
+          </p>
+          <p>
+            <strong>System role:</strong> It creates a repeatable top-level
+            navigation pattern for the LifeNote interface.
+          </p>
+        </div>
+      </section>
+
+      <!-- Input Section -->
+      <section class="component-section">
+        <h2>4. Input Field</h2>
+        <p class="section-intro">
+          The input field supports journaling and text entry, with clear visual
+          states for default, focus, and error conditions.
+        </p>
+
+        <label for="journal-default" class="field-label">Journal Entry</label>
+
+        <div class="demo-box">
+          <div class="input-row">
+            <input
+              id="journal-default"
+              class="input"
+              type="text"
+              placeholder="Start writing your thoughts..."
+            />
+
+            <input
+              class="input input--focus"
+              type="text"
+              placeholder="Start writing your thoughts..."
+            />
+
+            <input
+              class="input input--error"
+              type="text"
+              placeholder="Please enter at least a few words..."
+            />
+          </div>
+        </div>
+
+        <div class="purpose-text">
+          <p>
+            <strong>Purpose:</strong> Input fields support journaling and
+            content entry.
+          </p>
+          <p>
+            <strong>System role:</strong> They provide a reusable form pattern
+            with clear feedback states for usability.
+          </p>
+          <p><strong>States included:</strong> Default, focus, and error.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
